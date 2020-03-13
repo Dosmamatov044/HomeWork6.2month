@@ -13,7 +13,7 @@ public class Main {
 
 
 
-    wife.getId();       //это 2 просто так
+    wife.getId();       //это 2 просто так//
     wife.getSum(); //
     }
 }
