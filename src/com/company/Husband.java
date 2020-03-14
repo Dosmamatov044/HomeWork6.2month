@@ -1,8 +1,8 @@
 package com.company;
 
-public interface Husband <T,B extends Number> {
-    T getId();
+public interface Husband <T extends Number> {
+    T getFamily();
 
-    B getSum();
+    T getWhereDoTheyLive();
 
 }

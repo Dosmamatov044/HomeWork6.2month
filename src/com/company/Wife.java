@@ -1,21 +1,14 @@
 package com.company;
 
-public class Wife <T,B> implements Husband <Number,Number> {
+public class Wife   <T extends Number> implements Husband {
 private T children;
-private  B grandfather;
+private  T grandfather;
 
-    public Wife(T children,B grandfather) {
+    public Wife(T children,T grandfather) {
         this.children = children;
         this.grandfather = grandfather;
     }
 
-    public Wife(T children) {
-        this.children = children;
-    }
-
-    public Wife() {
-
-    }
 
     public T getChildren() {
         return children;
@@ -25,35 +18,38 @@ private  B grandfather;
         this.children = children;
     }
 
-    public B getGrandfather() {
+    public T getGrandfather() {
         return grandfather;
     }
 
-    public void setGrandfather(B grandfather) {
+    public void setGrandfather(T grandfather) {
         this.grandfather = grandfather;
     }
 
     @Override
-    public Number getId() {
-        int i;
-        int d=777;
-        int c=6;
-        int r=8;          //Бессмысленный
-        i=d-r*c;
-        return i;
+    public Number getFamily() {
+
+
+        System.out.println("Мама , Папа ,Сын , Дочь ");
+
+        return children;
+
     }
 
     @Override
-    public Number getSum() {
+    public Number getWhereDoTheyLive() {
+        System.out.println(" Родители живут " + " Отдельно в Оше ");
 
-        int i=1000;
-        int d=1000;
-        int c=5;
-                                       //также
-        d=d+i*c;
-        return d;
 
+
+        return grandfather ;
 
 
     }
 }
+
+
+
+
+
+
