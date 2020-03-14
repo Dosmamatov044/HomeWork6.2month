@@ -18,7 +18,7 @@ public class Main {
         System.out.println(wife.getId());
 
         wife.getSum();
-        System.out.println(wife.getSum());
+        System.out.println(wife.getSum());     //соуты
 
     }
 }
