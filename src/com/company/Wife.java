@@ -1,15 +1,15 @@
 package com.company;
 
-public class Wife implements Husband <Number> {
-private int children;
-private  double grandfather;
+public class Wife <T,B> implements Husband <Number,Number> {
+private T children;
+private  B grandfather;
 
-    public Wife(int children,double grandfather) {
+    public Wife(T children,B grandfather) {
         this.children = children;
         this.grandfather = grandfather;
     }
 
-    public Wife(int children) {
+    public Wife(T children) {
         this.children = children;
     }
 
@@ -17,29 +17,43 @@ private  double grandfather;
 
     }
 
-    public int getChildren() {
+    public T getChildren() {
         return children;
     }
 
-    public void setChildren(int children) {
+    public void setChildren(T children) {
         this.children = children;
     }
 
-    public double getGrandfather() {
+    public B getGrandfather() {
         return grandfather;
     }
 
-    public void setGrandfather(double grandfather) {
+    public void setGrandfather(B grandfather) {
         this.grandfather = grandfather;
     }
 
     @Override
     public Number getId() {
-        return 0;
+        int i;
+        int d=777;
+        int c=6;
+        int r=8;          //Бессмысленный
+        i=d-r*c;
+        return i;
     }
 
     @Override
-    public int getSum() {
-        return 0;
+    public Number getSum() {
+
+        int i=1000;
+        int d=1000;
+        int c=5;
+                                       //также
+        d=d+i*c;
+        return d;
+
+
+
     }
 }
